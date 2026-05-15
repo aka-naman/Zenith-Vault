@@ -1,4 +1,17 @@
- Step 9: Commands for the OFFLINE PC
+Dataset Title
+www.kaggle.com/datasets/akanaman/parser-env
+www.kaggle.com/datasets/akanaman/document-parser
+
+
+
+
+
+
+
+
+
+
+Step 9: Commands for the OFFLINE PC
   Once you plug the USB into the air-gapped PC, follow this sequence in a standard terminal (Command Prompt or PowerShell):
 
   1. Extract the Environment:
