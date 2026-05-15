@@ -22,3 +22,46 @@
    4 # Go to code and launch
    5 cd E:\Zenith-Vault
    6 streamlit run app.py --browser.gatherUsageStats False
+
+
+
+
+
+-----------------------------------------
+ Step 9: Setup on the OFFLINE PC
+  Once you plug your USB into the air-gapped PC, follow these steps:
+
+  1. Create a folder and extract the environment:
+  (In a Command Prompt on the offline PC)
+
+   1 # Create a folder for the environment
+   2 mkdir C:\doc_parser_env
+   3
+   4 # Extract the tarball (Assuming USB is E:)
+   5 tar -xzf E:\doc_parser_env.tar.gz -C C:\doc_parser_env
+
+  2. Set the offline cache paths:
+  This tells the code to look at the USB for the AI models instead of trying to use the internet.
+
+   1 set HF_HOME="E:\AI_Cache\huggingface"
+   2 set DOCLING_MODELS_CACHE="E:\AI_Cache\docling"
+   3 set EASYOCR_MODULE_PATH="E:\AI_Cache\easyocr"
+
+  3. Activate and Run:
+
+   1 # Activate the environment
+   2 C:\doc_parser_env\Scripts\activate.bat
+   3
+   4 # Navigate to the code on the USB
+   5 E:
+   6 cd Zenith-Vault
+   7
+   8 # Launch the UI
+   9 streamlit run app.py --browser.gatherUsageStats False
+
+  Congratulations! Once you finish these steps, you will have a fully functional, air-gapped RAG system.
+
+
+
+
+
