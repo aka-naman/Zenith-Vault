@@ -1,0 +1,24 @@
+ Step 9: Commands for the OFFLINE PC
+  Once you plug the USB into the air-gapped PC, follow this sequence in a standard terminal (Command Prompt or PowerShell):
+
+  1. Extract the Environment:
+
+   1 mkdir C:\doc_parser_env
+   2 tar -xzf E:\doc_parser_env.tar.gz -C C:\doc_parser_env
+   3 # (Change E: to your USB drive letter)
+
+  2. Set Offline Path Variables (Tells the code where the USB models are):
+  Note: If you copy the AI_Cache to the offline PC's D: drive, use D: below.
+
+   1 set HF_HOME="E:\AI_Cache\huggingface"
+   2 set DOCLING_MODELS_CACHE="E:\AI_Cache\docling"
+   3 set EASYOCR_MODULE_PATH="E:\AI_Cache\easyocr"
+
+  3. Activate and Run:
+
+   1 # Activate
+   2 C:\doc_parser_env\Scripts\activate.bat
+   3
+   4 # Go to code and launch
+   5 cd E:\Zenith-Vault
+   6 streamlit run app.py --browser.gatherUsageStats False
