@@ -1,4 +1,4 @@
-# 🛡️ PrivateVault
+# 🛡️ PrivateVault 
 ### Professional-Grade Technical Document Intelligence & Reasoning
 
 **PrivateVault** is an enterprise-ready RAG (Retrieval-Augmented Generation) system designed for high-precision reasoning over complex technical documents, scientific papers, and industrial manuals. By combining **Docling's** layout-aware parsing with **Qwen2.5's** advanced reasoning capabilities, PrivateVault transforms static PDFs into interactive, searchable knowledge bases.
