@@ -95,11 +95,5 @@ python main.py query --collection "my_collection" --text "Explain the primary re
 4.  **Query**: Use the chat tab to ask technical questions. View source context in the "Evidence" expander for full transparency.
 5.  **Preview**: Check the "Document Preview" tab to see exactly which pages are being analyzed.
 
----
 
-## 🛡️ License
-Distributed under the MIT License. See `LICENSE` for more information.
 
----
-*PrivateVault — High-Accuracy Technical Document Reasoning*
-"# Zenith-Vault" 
